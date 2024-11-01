@@ -1,0 +1,138 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Playfair Display", serif;;
+}
+
+/* Moblie layout max ---px */
+header{
+  width: 100%;
+  height: 110vh;
+  background: #fff0cb;
+}
+
+#navbar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Change this when logo is added  */
+#navbar h1{
+  margin: 150px 0 200px 0;
+  font-size: 60px;
+  color: orange;
+}
+
+#navbar-list{
+  display: flex;
+  column-gap: 50px;
+  list-style-type: none;
+}
+
+#navbar-list li a{
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  
+}
+
+#navbar-list li a:hover{
+  color: #F49619;
+  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-color: #000000;
+}
+
+/* Main section styling */
+#name-role {
+  margin-top: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #4C7031;
+}
+
+/* Styling for name */
+#myname, #role-description {
+  font-weight: 400;
+  position: relative;
+  cursor: pointer;
+  
+}
+
+/* Specific font size for #myname */
+#myname {
+  font-size: 3.2rem;
+}
+
+/* Default popup styling */
+.popup {
+  display: none;
+  position: absolute;
+  background-color: #e9dcbb;
+  color: #000000;
+  padding: 10px;
+  border: solid 1px #92a583;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: max-content;
+  text-align: left;
+  z-index: 1;
+  white-space: nowrap;
+}
+
+.popup a{
+  text-decoration: none;
+  color: #000000;
+  font-size: 1rem;
+}
+
+#namePopup {
+  bottom: 80%;
+  left: 50%;
+  transform: translate(-50%, -10px);
+}
+
+#rolePopup {
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, 10px);
+}
+
+#myname:hover .popup {
+  display: block;
+}
+
+#role-description:hover .popup {
+  display: block;
+}
+
+/* About Me */
+#about-me{
+  width: 100%;
+  height: 150vh;
+  background-color: #4C7031;
+}
+
+#about-me h1{
+  color: #e9dcbb;
+}
+
+/* BG Color for projects & contact */
+#projects-contact{
+  background: linear-gradient(180deg, rgba(231,211,157,1) 0%, rgba(249,241,214,1) 100%);
+}
+
+#projects-contact h1{
+  color: #F49619;
+}
+/* Projects */
+#projects{
+  width: 100%;
+  height: 100vh;
+}
+/* Contact */
+#contact{
+  width: 100%;
+  height: 100vh;
+}
