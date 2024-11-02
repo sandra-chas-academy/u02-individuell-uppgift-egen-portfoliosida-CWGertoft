@@ -106,7 +106,10 @@ header{
 #role-description:hover .popup {
   display: block;
 }
-
+/* Sections */
+.h1{
+  padding: 10%;
+}
 /* About Me */
 #about-me{
   width: 100%;
@@ -118,7 +121,7 @@ header{
   color: #e9dcbb;
 }
 
-/* BG Color for projects & contact */
+/* BG Color & h1 text color for projects & contact */
 #projects-contact{
   background: linear-gradient(180deg, rgba(231,211,157,1) 0%, rgba(249,241,214,1) 100%);
 }
@@ -126,6 +129,7 @@ header{
 #projects-contact h1{
   color: #F49619;
 }
+
 /* Projects */
 #projects{
   width: 100%;
