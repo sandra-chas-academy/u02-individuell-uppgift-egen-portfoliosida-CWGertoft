@@ -106,7 +106,10 @@ header{
 #role-description:hover .popup {
   display: block;
 }
-
+/* Sections */
+.h1{
+  padding: 10%;
+}
 /* About Me */
 #about-me{
   width: 100%;
