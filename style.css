@@ -5,16 +5,23 @@
   font-family: "Playfair Display", serif;;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Moblie layout */
 header {
   width: 100%;
-  height: 110vh;
+  height: 130vh;
   background: #fff0cb;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  z-index: -1;
 }
 
 #navbar {
@@ -33,6 +40,10 @@ header {
   position: relative;
   width: 250px;
   height: 250px;
+}
+
+.rotating-logo {
+  transition: transform 1s ease-out;
 }
 
 .static-logo,
@@ -66,7 +77,7 @@ header {
 /* Main section styling */
 #name-role {
   position: absolute;
-  bottom: 15%;
+  bottom: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -127,16 +138,13 @@ header {
   display: block;
 }
 
-/* Sections */
-.h1{
-  padding: 5%;
-}
-
 /* About Me */
-#about-me{
-  width: 100%;
-  height: 150vh;
+#about-me {
+  margin-top: 110vh;
   background-color: #4C7031;
+  padding: 40px;
+  color: #e9dcbb;
+  height: 150vh;
 }
 
 #about-me h1{
@@ -175,11 +183,19 @@ header {
 
 /* BG Color & h1 text color for projects & contact */
 #projects-contact{
+  width: 100%;
   background: linear-gradient(180deg, rgba(231,211,157,1) 0%, rgba(249,241,214,1) 100%);
 }
 
 #projects-contact h1{
   color: #F49619;
+  font-size: 1.5rem;
+}
+
+#projects, #contact {
+  padding: 40px;
+  color: #000;
+  min-height: 100vh;
 }
 
 /* Projects */
@@ -285,6 +301,21 @@ header {
 }
 
 .logo2-container img{
+  width: 150px;
+  height: 150px;
+}
+
+@keyframes continuous-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#rotating-logo {
+  animation: continuous-rotate 4s linear infinite;
   width: 150px;
   height: 150px;
 }
