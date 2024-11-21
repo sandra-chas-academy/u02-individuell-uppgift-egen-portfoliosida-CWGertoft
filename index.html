@@ -214,8 +214,27 @@
     <ul id="contact-links">
       <li id="github"><a href="https://github.com/CWGertoft" target="_blank">GitHub</a></li>
       <li id="linkedin"><a href="https://www.linkedin.com/in/williamgertoft/" target="_blank">LinkedIn</a></li>
-      <li id="mail">Mail</li>
+      <li id="mail"><a href="#" id="mail-link">Mail</a></li>
     </ul>
+    
+    <!-- Popup for Mail -->
+    <section id="mail-popup" hidden>
+      <form>
+        <button type="button" id="close-mail-popup" aria-label="Close popup">
+          <i class="fas fa-times"></i>
+        </button>
+        <h2>Send a Message</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
 
     <div class="logo2-container">
       <img id="rotating-logo" src="Images/Logo.svg" alt="LOGO">

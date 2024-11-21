@@ -155,3 +155,28 @@ document.addEventListener('keydown', (event) => {
     closeModalHandler();
   }
 });
+
+
+// Mail functionality
+
+const mailLink = document.getElementById('mail-link');
+const mailPopup = document.getElementById('mail-popup');
+const closeMailPopup = document.getElementById('close-mail-popup');
+
+// Show the popup when the "Mail" link is clicked
+mailLink.addEventListener('click', (event) => {
+  event.preventDefault(); // Prevent the default link behavior
+  mailPopup.hidden = false; // Show the popup
+});
+
+// Close the popup
+closeMailPopup.addEventListener('click', () => {
+  mailPopup.hidden = true; // Hide the popup
+});
+
+// Close the popup if clicking outside of the form
+window.addEventListener('click', (event) => {
+  if (event.target === mailPopup) {
+    mailPopup.hidden = true;
+  }
+});
