@@ -11,6 +11,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
 </head>
 <body>
 
@@ -62,18 +64,66 @@
 
 <!-- Section - About Me-->
 <section id="about-me" class="h1">
+  <picture class="curve-top">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+  </picture>
+
   <h1>About Me</h1>
+
   <section id="mybackground">
     <img id="about-pic1" src="Images/1683626975665.jpg" alt="picture">
     <p>I’m William, a full-stack JavaScript developer with a strong foundation in sustainability. My journey started in the world of sustainability, where I realized how impactful tech could be in advancing environmentally responsible solutions. Now, I’m blending my expertise in sustainability with my technical skills to create efficient, mindful applications that meet user needs and prioritize environmental considerations.</p>
     <img id="about-pic2" src="Images/1683626975665.jpg" alt="picture">
     <p>With experience in JavaScript frameworks like React, Node.js, and Express, I focus on building clean, scalable solutions that minimize environmental impact. I’m passionate about tech that not only solves problems but also supports a sustainable future. Driven by curiosity and purpose, I’m excited to contribute to projects that align with my values, creating responsible digital solutions for a better tomorrow.</p>
   </section>
-  <h1>Resume</h1>
-  <section id="cv"></section>
+
+  <section id="cv">
+    <h1>Resume</h1>
+  
+    <!-- CV och Examensbevis -->
+    <section id="cvSection">
+      <figure class="image-container">
+
+        <img src="Images/resume.svg" alt="Mitt CV" id="cvPreview">
+        <span class="magnifying-glass">
+          <i class="fas fa-search"></i> <!-- Font Awesome Icon -->
+        </span>
+
+      </figure>
+
+      <figure class="image-container">
+
+        <img src="Images/examensbevis-placeholder.png" alt="Examensbevis" id="examPreview">
+        <span class="magnifying-glass">
+          <i class="fas fa-search"></i> <!-- Font Awesome Icon -->
+        </span>
+
+      </figure>
+    </section>
+   
+    <!-- Popup-modal -->
+    <section id="modal" hidden>
+      <button id="closeModal" class="close-button">×</button>
+      <button id="prev" class="nav-button">❮</button>
+      
+      <img id="modalImage" src="Images/examensbevis-placeholder.png" alt="Popup-bild">
+      <a id="externalLink" href="https://verify.trueoriginal.com/4D3B0FD6-3C77-87B2-59B3-60D37CE95EAE/?ref=direct-copy" target="_blank" hidden>Öppna Examensbeviset</a>
+      <button id="next" class="nav-button">❯</button>
+    </section>
+  </section>
+  
+
 </section>
 
 <section id="projects-contact">
+
+  <picture class="curve-bottom">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+  </picture>
 
   <!-- Section - Projects -->
   <section id="projects" class="h1">
@@ -162,8 +212,8 @@
 
     <!-- Social Media & Mail Icons -->
     <ul id="contact-links">
-      <li id="github">GitHub</li>
-      <li id="linkedin">LinkedIn</li>
+      <li id="github"><a href="https://github.com/CWGertoft" target="_blank">GitHub</a></li>
+      <li id="linkedin"><a href="https://www.linkedin.com/in/williamgertoft/" target="_blank">LinkedIn</a></li>
       <li id="mail">Mail</li>
     </ul>
 
