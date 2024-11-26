@@ -23,12 +23,12 @@
   <nav id="navbar">
     
 
-    <div class="logo-container">
+    <section class="logo-container">
       <!-- Rotating green letters SVG -->
       <img src="Images/Logo-CG.svg" class="rotating-logo">
       <!-- Static "W" SVG -->
       <img src="Images/Logo-W.svg" alt="CWG" class="static-logo">  
-    </div>
+    </section>
 
     <ul id="navbar-list">
       <li><a href="#about-me">About</a></li>
@@ -84,24 +84,33 @@
   
     <!-- CV och Examensbevis -->
     <section id="cvSection">
-      <figure class="image-container">
-
-        <img src="Images/resume.svg" alt="Mitt CV" id="cvPreview">
-        <span class="magnifying-glass">
-          <i class="fas fa-search"></i> <!-- Font Awesome Icon -->
-        </span>
-
-      </figure>
-
-      <figure class="image-container">
-
-        <img src="Images/examensbevis-placeholder.png" alt="Examensbevis" id="examPreview">
-        <span class="magnifying-glass">
-          <i class="fas fa-search"></i> <!-- Font Awesome Icon -->
-        </span>
-
-      </figure>
+      <!-- Text (Education och Work Experience) -->
+      <section id="dynamic-cv">
+        <h2>Education</h2>
+        <ul id="education-list"></ul>
+  
+        <h2>Work Experience</h2>
+        <ul id="work-experience-list"></ul>
+      </section>
+  
+      <!-- Wrapper för bilder -->
+      <section id="image-wrapper">
+        <figure class="image-container">
+          <img src="Images/resume.svg" alt="Mitt CV" id="cvPreview">
+          <span class="magnifying-glass">
+            <i class="fas fa-search"></i> <!-- Font Awesome Icon -->
+          </span>
+        </figure>
+  
+        <figure class="image-container">
+          <img src="Images/examensbevis-placeholder.png" alt="Examensbevis" id="examPreview">
+          <span class="magnifying-glass">
+            <i class="fas fa-search"></i> <!-- Font Awesome Icon -->
+          </span>
+        </figure>
+      </section>
     </section>
+  </section>
    
     <!-- Popup-modal -->
     <section id="modal" hidden>

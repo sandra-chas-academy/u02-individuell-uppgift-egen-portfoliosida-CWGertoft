@@ -63,6 +63,37 @@ function smoothScrollAndRotate() {
 smoothScrollAndRotate();
 
 
+// Fetch the JSON data and populate the CV
+fetch('resume.json')
+  .then(response => response.json())
+  .then(data => {
+    populateEducation(data.education);
+    populateWorkExperience(data.workExperience);
+  })
+  .catch(error => console.error('Error fetching the JSON data:', error));
+
+function populateEducation(education) {
+  const educationList = document.getElementById('education-list');
+  education.forEach(item => {
+    const listItem = document.createElement('li');
+    listItem.innerHTML = `
+      <strong>${item.school}</strong> - ${item.degree} (${item.year})
+    `;
+    educationList.appendChild(listItem);
+  });
+}
+
+function populateWorkExperience(workExperience) {
+  const workExperienceList = document.getElementById('work-experience-list');
+  workExperience.forEach(item => {
+    const listItem = document.createElement('li');
+    listItem.innerHTML = `
+      <strong>${item.company}</strong> - ${item.position} (${item.year})
+    `;
+    workExperienceList.appendChild(listItem);
+  });
+}
+
 // Popup modal cv section
 const modal = document.getElementById('modal');
 const modalImage = document.getElementById('modalImage');
