@@ -70,7 +70,12 @@ fetch('resume.json')
     populateEducation(data.education);
     populateWorkExperience(data.workExperience);
   })
-  .catch(error => console.error('Error fetching the JSON data:', error));
+  .catch(error => {
+    // Display error messages in the respective sections
+    document.getElementById('education-list').innerHTML = '<li>Error loading education data.</li>';
+    document.getElementById('work-experience-list').innerHTML = '<li>Error loading work experience data.</li>';
+    console.error('Error fetching the JSON data:', error);
+  });
 
 function populateEducation(education) {
   const educationList = document.getElementById('education-list');
@@ -93,7 +98,6 @@ function populateWorkExperience(workExperience) {
     workExperienceList.appendChild(listItem);
   });
 }
-
 // Popup modal cv section
 const modal = document.getElementById('modal');
 const modalImage = document.getElementById('modalImage');
@@ -134,6 +138,7 @@ function showModal(index) {
     modalImage.style.display = 'block'; // Show image
     modalImage.src = item.src;
     modalImage.alt = item.alt;
+    modalImage.setAttribute('loading', 'lazy'); // Enable lazy loading
   } else if (item.type === 'pdf') {
     modalImage.style.display = 'none'; // Hide image
     modalPdf.style.display = 'block'; // Show PDF
