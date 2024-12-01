@@ -424,7 +424,7 @@ header {
 
 .project-list .project-container {
   width: 100%;
-  max-width: 600px;
+  max-width: 350px;
   height: auto;
   background-color: rgba(249, 241, 214, 0.7);
   border-radius: 10px;
