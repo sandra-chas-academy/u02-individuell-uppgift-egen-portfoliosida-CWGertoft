@@ -1,0 +1,36 @@
+{
+  "education": [
+    {
+      "school": "Chas Academy",
+      "degree": "Fullstack Javacsript Developer",
+      "year": "2024 - Ongoing"
+    },
+    {
+      "school": "Stockholm Internationella Handelsskola",
+      "degree": "Sustainability Specialist",
+      "year": "2022 - 2024"
+    },
+    {
+      "school": "NTI Skolan",
+      "degree": "Technology Program",
+      "year": "2015"
+    }
+  ],
+  "workExperience": [
+    {
+      "company": "ICA Supermarket Hagsätra",
+      "position": "Shift Manager",
+      "year": "2022 - Present"
+    },
+    {
+      "company": "Med Omsorg Stockholm AB",
+      "position": "Therapeutic Counselor",
+      "year": "2019 - 2021"
+    },
+    {
+      "company": "Svenska Socialbyrån AB",
+      "position": "Therapeutic Counselor & Board Member",
+      "year": "2017 - Ongoing"
+    }
+  ]
+}
